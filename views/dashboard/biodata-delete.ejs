@@ -1,0 +1,46 @@
+<%- include('../partials/dashboard/form-head') %>
+
+        <div class="card bg-glass">
+          <div class="card-body px-4 py-5 px-md-5">
+            <div class="back">
+                <a href="/admin/userbiodata"><h3> &lt; Back</h3></a>
+            </div>
+            <div class="d-flex text-center mb-3">
+              
+               <h1>Delete User</h1>
+            </div>
+            <form action ="/admin/userbiodata/delete/<%= i.id %>" method="post">
+
+              <!-- Full Name input -->
+              <div class="form-outline mb-4">
+                <label class="form-label" for="email">Full Name</label>
+                <input type="hidden" name="id" value="<%= i.id %>">
+                <input type="full_name" name="full_name" id="full_name" class="form-control" value="<%= i.full_name %>"/>
+              </div>
+
+              <!-- Username input -->
+              <div class="form-outline mb-4">
+                <label class="form-label" for="username">Birth Date</label>
+                <input type="date" name="birth_date" id="birth_date" class="form-control" value="<%= i.birth_date %>"/>
+              </div>
+
+               <!-- Username input -->
+               <div class="form-outline mb-4">
+                <label class="form-label" for="gender">Gender</label>
+                <input type="text" name="gender" id="gender" class="form-control" value="<%= i.gender %>"/>
+              </div>
+
+
+              <!-- User Game ID input -->
+             <div class="form-outline mb-4">
+                <label class="form-label" for="user_game_id">User Game ID</label>
+                <input type="integer" name="user_game_id" id="user_game_id" class="form-control" value="<%= i.user_game_id %>"/>
+              </div>
+
+              <!-- Submit button -->
+              <button type="submit" class="btn btn-primary btn-block mb-4">
+                Delete
+              </button>
+
+<%- include('../partials/dashboard/form-bottom') %>
+

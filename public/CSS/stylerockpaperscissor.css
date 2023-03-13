@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;700&display=swap');
+
+body{
+    background-color: #9C835F;
+    font-family: 'open sans';
+}
+
+.main-games{
+    margin-top: 50px;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.rock{
+  margin-top: 25px;
+}
+
+.rock-img{
+    height: 92px;
+    width: 128px;
+    
+}
+
+.paper{
+    margin-top: 25px;
+}
+
+.paper-img{
+    height: 150px;
+    width: 115px;
+}
+
+.scissor{
+    margin-top: 25px;
+}
+
+.scissor-img{
+    height: 160px;
+    width: 134px;
+}
+
+.refresh-img{
+    height: 71px;
+    width: 77px;
+    margin-bottom: 100px;
+}
+.versus{
+        justify-content: center;
+        font-size: 100px;
+        align-items: center;
+        color: #BD0000;
+        font-weight: bold;
+}
+
+.header {
+    align-items: center;
+    height: 120px;
+    
+}
+
+.title {
+    color: #F9B23D;
+    font-weight: 700;
+    font-size: 36px;
+}
+
+.back {
+    text-decoration: none;
+    color: #724C21;
+    font-size: 72px;
+    font-weight: 1000;
+}
+
+.logo {
+position: absolute;
+width: 72px;
+height: 72px;
+}
+
+
+
+.rectangle:hover{
+    background-color: #C4C4C4;
+    background-size: 2000px;
+}
+
+.rectangle {
+    margin: 25px 0;
+    width: 175px;
+    height: 175px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15%;
+}
+
+.left {
+    justify-content: flex-end;
+}
+
+.right {
+    justify-content: flex-start;
+}
+
+#com{
+    margin-left: 40px;
+}
+
+.result {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 30px;
+    transform: rotate(-30deg);
+    color: white;
+    width: 190px;
+    height: 120px;
+    border-radius: 6%;
+}
+
+.score{
+    font-size: 36px;
+    font-weight: 700;
+
+}
+
+#Print{
+    color: #BD0000;
+}

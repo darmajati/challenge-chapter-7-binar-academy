@@ -1,0 +1,73 @@
+
+    <%- include('partials/head') %>
+
+<!-- tittle -->
+    <div class="container-fluid header d-flex">
+        <div class="back-container ms-3 me-2">
+            <a href="/auth/loginAs" class="back">&lt</a>
+        </div>
+        <div class="logo-container">
+            <img class="ms-4 me-2" src="image/logo 1.png" alt="logo">
+        </div>
+        <div class="title-container">
+            <h1 class="title ms-3">ROCK PAPER SCISSORS</h1>
+        </div>
+    </div>
+<!-- end -->
+
+<!-- Score -->
+<div class="container text-center score">
+    <span>Score:</span>
+    <span id="Print">0</span>
+</div>
+
+<!-- end score -->
+
+<!-- rock paper scissor games -->
+    <div class="container text-center main-games">
+        <div class="row">
+          <div class="col-4 d-flex left">Player 1</div>
+          <div class="col-4"></div>
+          <div class="col-4 d-flex right"> 
+            <div id="com">COM</div>
+        </div>
+        </div>
+        <div class="row rock">
+            <div class="col-4 d-flex left">
+                <div id="player-rock" class="rectangle d-flex" onclick="Rock()"><img src="image/batu.png" class="rock-img" alt="batu"></div>
+            </div>
+                <div class="col-4"></div>
+            <div class="col-4 d-flex right">
+                <div id="com-rock" class="rectangle d-flex"> <img src="image/batu.png" alt="batu" class="rock-img"> </div>
+            </div>
+        </div>
+        <div class="row paper">
+            <div class="col-4 d-flex left">
+                <div id="player-paper" class="rectangle d-flex" onclick="Paper()"> <img src="image/kertas.png" alt="kertas" class="paper-img"> </div>
+            </div>
+                <div class="col-4 d-flex versus"> 
+                    <div class="replace d-flex">VS</div>
+                </div>
+            <div class="col-4 d-flex right">
+                <div id="com-paper" class="rectangle d-flex"><img src="image/kertas.png" alt="kertas" class="paper-img"> </div>
+            </div>
+        </div>
+        <div class="row scissor">
+            <div class="col-4 d-flex left">
+                <div id="player-scissor" class="rectangle d-flex" onclick="Scissor()"><img src="image/gunting.png" alt="gunting" class="scissor-img">
+                </div>
+            </div>
+            <div class="col-4"></div>
+            <div class="col-4 d-flex right">
+                <div id="com-scissor" class="rectangle d-flex"><img src="image/gunting.png" alt="gunting" class="scissor-img"></div>
+            </div>
+        </div>  
+        
+            <div class="row refresh">
+                <div class="col-md-6 offset-md-3">
+                <a href="rockpaperscissors"> <img src="image/refresh.png" alt="kertas" class="refresh-img"> </a>
+                </div>
+            </div>  
+    </div>
+<!-- end -->
+<%- include('partials/scripts') %>

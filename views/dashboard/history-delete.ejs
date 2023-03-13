@@ -1,0 +1,30 @@
+<%- include('../partials/dashboard/form-head') %>
+        <div class="card bg-glass">
+          <div class="card-body px-4 py-5 px-md-5">
+            <div class="back">
+                <a href="/admin/userhistories"><h3> &lt; Back</h3></a>
+            </div>
+            <div class="d-flex text-center mb-3">
+              
+               <h1>Delete User</h1>
+            </div>
+            <form action ="/admin/userhistories/delete/<%= i.id %>" method="post">
+
+              <!-- Full Name input -->
+              <div class="form-outline mb-4">
+                <label class="form-label" for="score">Score</label>
+                <input type="hidden" name="id" value="<%= i.id %>">
+                <input type="score" name="score" id="score" class="form-control" value="<%= i.score %>"/>
+              </div>
+
+              <!-- User Game ID input -->
+             <div class="form-outline mb-4">
+                <label class="form-label" for="user_game_id">User Game ID</label>
+                <input type="integer" name="user_game_id" id="user_game_id" class="form-control" value="<%= i.user_game_id %>"/>
+              </div>
+
+              <!-- Submit button -->
+              <button type="submit" class="btn btn-primary btn-block mb-4">
+                Delete
+              </button>
+<%- include('../partials/dashboard/form-bottom') %>

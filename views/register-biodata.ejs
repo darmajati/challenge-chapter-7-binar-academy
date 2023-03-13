@@ -1,0 +1,70 @@
+  <%- include('partials/head') %>  
+  <%- include('partials/formstyle') %>
+
+        <div class="card bg-glass">
+          <div class="card-body px-4 py-5 px-md-5">
+            <div class="back">
+              <a href="/auth/register"><h3> &lt; Back</h3></a>
+            </div>
+            <div class="d-flex text-center mb-3">
+              <h1>Sign Up</h1>
+            </div>
+            <form action ="/auth/register-biodata" method="post">
+
+              <!-- Fullname input -->
+              <div class="form-outline mb-4">
+                <label class="form-label" for="username">Full Name</label>
+                <input type="text" name="fullname" id="fullname" class="form-control" required/>
+               </div>
+
+             <!-- Date Birth -->
+             <div class="form-outline mb-4">
+               <label class="form-label" for="datebirth">Date Birth</label>
+               <input type="date" name="datebirth" id="datebirth" class="form-control" required/>
+             </div>
+             
+              <!-- Gender -->
+              <div class="form-outline mb-4">
+               <label class="form-label" for="Gender">Gender</label><br>
+               <input type="radio" name="gender" value="male" required> Male <input type="radio" name="gender" value="female" required> Female
+              </div>
+
+             <!-- id user game input -->
+             <div class="form-outline mb-4">
+              <label class="form-label" for="user_game_id">ID User Game</label>
+              <input type="integer" name="user_game_id" id="user_game_id" class="form-control" required/>
+            </div>
+
+              <!-- Submit button -->
+              <button type="submit" class="btn btn-primary btn-block mb-4">
+                Next
+              </button>
+
+              <!-- Register buttons -->
+              <div class="text-center">
+
+                <button type="button" class="btn btn-link btn-floating mx-1">
+                  <i class="fab fa-google"></i>
+                </button>
+
+                <button type="button" class="btn btn-link btn-floating mx-1">
+                  <i class="fab fa-twitter"></i>
+                </button>
+
+                <button type="button" class="btn btn-link btn-floating mx-1">
+                  <i class="fab fa-github"></i>
+                </button>
+                    <div>
+                        <p class="mb-0">Already have an account? <a href="/auth/login" class="fw-bold">Login</a>
+                        </p>
+                  </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<%- include('partials/scripts') %>
+

@@ -1,0 +1,30 @@
+<%- include('../partials/dashboard/dashboard-head') %>
+						<a href="/admin/userbiodata/create" class="btn btn-success" data-toggle="modal"><i class="material-icons">&#xE147;</i> <span>Add New User Biodata</span></a>				
+					</div>
+				</div>
+			</div>
+			<table class="table table-striped table-hover">
+				<thead>
+					<tr>
+						<th>ID</th>
+						<th>Full Name</th>
+						<th>Birth Date</th>
+						<th>Gender</th>
+						<th>ID User Game</th>
+					</tr>
+				</thead>
+				<tbody>
+					<% userGameBiodata.forEach(i => { %>
+						<tr>
+							<td><%= i.id %></td>
+							<td><p><%= i.full_name %></p></td>
+							<td><%= i.birth_date %></td>
+							<td><p><%= i.gender %></p></td>
+							<td><p><%= i.user_game_id %></p></td>
+							<td>
+								<a href="/admin/userbiodata/update/<%= i.id %>" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
+								<a href="/admin/userbiodata/delete/<%= i.id %>" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
+							</td>
+						</tr>
+						<% }) %>
+<%- include('../partials/dashboard/dashboard-bottom') %>

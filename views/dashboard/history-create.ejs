@@ -1,0 +1,29 @@
+<%- include('../partials/dashboard/form-head') %>
+        <div class="card bg-glass">
+          <div class="card-body px-4 py-5 px-md-5">
+            <div class="back">
+                <a href="/admin/userhistories"><h3> &lt; Back</h3></a>
+            </div>
+            <div class="d-flex text-center mb-3">
+              
+               <h1>Create History User</h1>
+            </div>
+            <form action ="/admin/userhistories/create" method="post">
+
+              <!-- Fullname input -->
+              <div class="form-outline mb-4">
+                <label class="form-label" for="score">Score</label>
+                <input type="integer" name="score" id="full_name" class="form-control" required/>
+               </div>
+
+              <!-- id user game input -->
+             <div class="form-outline mb-4">
+                <label class="form-label" for="user_game_id">ID User Game</label>
+                <input type="integer" name="user_game_id" id="user_game_id" class="form-control" required/>
+                
+              <!-- Submit button -->
+              <button type="submit" class="btn btn-primary btn-block mb-4">
+                Create
+              </button>
+
+<%- include('../partials/dashboard/form-bottom') %>

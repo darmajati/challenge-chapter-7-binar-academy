@@ -1,0 +1,54 @@
+   <!-- Section: Design Block -->
+   <section class="background-radial-gradient overflow-hidden">
+    <style>
+       body {
+      background-image: url('/image/main-bg.jpg');
+      background-size: cover;
+    }
+  
+      .bg-glass {
+        background-color: hsla(0, 0%, 100%, 0.9) !important;
+        backdrop-filter: saturate(200%) blur(25px);
+      }
+      .btn {
+      border-radius: 5px;
+      padding: 15px 55px;
+      font-size: 22px;
+      text-decoration: none;
+      margin: 20px;
+      color: #fff;
+      position: relative;
+      display: inline-block;
+      }
+  
+      .btn:active {
+      transform: translate(0px, 5px);
+      -webkit-transform: translate(0px, 5px);
+      box-shadow: 0px 1px 0px 0px;
+      }    
+  
+      .yellow {
+      background-color: #fdae02;
+      box-shadow: 3px 5px 5px #888888;
+      border-radius: 2px;   
+      }
+  
+      .yellow:hover {
+      background-color: rgb(228, 238, 136);
+      /*  Making button bigger on hover  */
+      padding: 20px 60px;
+      }
+    </style>
+  
+    <div class="container px-4 py-5 px-md-5 text-center text-lg-start my-5">
+      <div class="row gx-lg-5 mb-5">
+        <div class="col-lg-6 mb-5 mb-lg-0" style="z-index: 10">
+          <h1 class="my-5 display-5 fw-bold ls-tight" style="color: hsl(218, 81%, 95%)">
+            The Games <br />
+            <span style="color: hsl(51, 100%, 50%)">Rock Paper Scissors</span>
+          </h1>
+        </div>
+  
+        <div class="col-lg-6 mb-5 mb-lg-0 position-relative">
+          <div id="radius-shape-1" class="position-absolute rounded-circle shadow-5-strong"></div>
+          <div id="radius-shape-2" class="position-absolute shadow-5-strong"></div>
